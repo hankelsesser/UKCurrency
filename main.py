@@ -10,6 +10,5 @@ def make_bag(values):
 
 coins = make_bag(values)
 combinations = []
-for length in range(len(coins)):
-    combinations.append(itertools.combinations(coins, length))
-print(combinations)
+#for length in range(len(coins))
+print(itertools.combinations(coins, 10))
