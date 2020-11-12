@@ -11,4 +11,8 @@ def make_bag(values):
 coins = make_bag(values)
 combinations = []
 for length in range(len(coins)):
-    print(list(itertools.combinations(coins, length)))
+    for combo in itertools.combinations(coins, length):
+        if sum(combo) == 200 and combo not in cominations:
+            combinations.append(combo)
+
+print(len(combinations))
